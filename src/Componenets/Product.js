@@ -1,0 +1,45 @@
+import React from 'react';
+import './Product.css';
+import {product} from "../Data"
+
+const Product = () => {
+    return(
+        <section className='product' id='product'>
+        <h1 className='heading'>
+            our <span>Products</span>
+        </h1>
+        <div className='box-container'>
+            {
+                product.map((item,index) =>(
+                    <div className='box'>
+                        <div className='icons'>
+                        <a href="1" className='fa fa-shopping-cart'></a>
+                        <a href="2" className='fa fa-heart'></a>
+                        <a href="3" className='fa fa-eye'></a>
+                        </div>
+                        <div className='image'>
+                            <img src={item.img} alt="" />
+                        </div>
+                        <div className='content'>
+                            <h3>cofee</h3>
+                            <div className='stars'>
+                            <i className='fa fa-star'></i>
+                            <i className='fa fa-star'></i>
+                            <i className='fa fa-star'></i>
+                            <i className='fa fa-star'></i>
+                            <i className='fa fa-star'></i>
+                            </div>
+                        </div>
+                         <div className='price'>
+                            $18.45 <span>$20.3</span>
+                         </div>
+                    </div>
+                ))
+            }
+        </div>
+
+        </section>
+    )
+}
+
+export default Product;

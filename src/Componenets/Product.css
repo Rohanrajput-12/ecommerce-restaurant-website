@@ -1,0 +1,52 @@
+.product .box-container .box{
+    text-align: center;
+    border: 0.2rem solid orange;
+    padding: 2rem;
+}
+
+.product .box-container .box .icons a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    border: 0.2rem solid orange;
+    color: #fff;
+    margin: 0.3rem;
+}
+.product .box-container .box .icons{
+    background:black;
+}
+
+.product .box-container .box .icons a:hover{
+    background: orange;
+}
+
+.product .box-container .box .image{
+    padding: 2.5rem 0;
+}
+
+.product .box-container .box .image img{
+    height: 25rem;
+}
+
+.product .box-container .box .content h3{
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.product .box-container .box .content .stars i{
+    font-size: 1.7rem;
+    color: orange;
+}
+
+.product .box-container .box .content .price span {
+   color: #fff;
+   font-size: 2.5rem;
+}
+
+.product .box-container .box .content .price span{
+    text-decoration: line-through;
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+

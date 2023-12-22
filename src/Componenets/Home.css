@@ -1,0 +1,42 @@
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, rgb(0 0 0/  90%),rgb(68 68 68/  35%)) , 
+    url(../Assets/Images/bgimage.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    max-width: 70rem;
+}
+
+.home span {
+    color: orange;
+    text-transform: uppercase;
+}
+
+.home .content h3{
+    font-size: 6rem;
+    text-transform:  uppercase;
+    color: white;
+    margin-left: 5%;
+}
+
+.home .content p{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #eee;
+    margin-left: 5%;
+
+}
+ 
+.home .btn{
+    cursor: pointer;
+    margin-left: 5%;
+    padding:12px;
+    width: 10%;
+}
