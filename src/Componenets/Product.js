@@ -13,9 +13,9 @@ const Product = () => {
                 product.map((item,index) =>(
                     <div className='box'>
                         <div className='icons'>
-                        <a href="1" className='fa fa-shopping-cart'></a>
-                        <a href="2" className='fa fa-heart'></a>
-                        <a href="3" className='fa fa-eye'></a>
+                        <a className='fa fa-shopping-cart'></a>
+                        <a className='fa fa-heart'></a>
+                        <a className='fa fa-eye'></a>
                         </div>
                         <div className='image'>
                             <img src={item.img} alt="" />

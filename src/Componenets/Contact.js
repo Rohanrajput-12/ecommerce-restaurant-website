@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import './Contact.css';
-
+import axios from "axios";
 
 const Contact = () => {
+    const [values,setValues] = useState({
+        name: '',
+        email: '',
+        number: ''
+    })
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        axios.post('http://localhost:5000/contact', values)
+        .then(res => console.log(res))
+        .then(err => console.log(err));
+    }
     return (
         <section className="contact" id="contact">
             <h1 className="heading">
@@ -16,21 +27,24 @@ const Contact = () => {
              loading="lazy" 
              referrerpolicy="no-referrer-when-downgrade">   
              </iframe>
-                <form>
+                <form onSubmit={handleSubmit}>
                     <h3>get in touch</h3>
                     <div className="inputBox">  
                         <span className="fa fa-user"></span>
-                        <input type="text" placeholder="Name" />
+                        <input type="text" placeholder="Name" name="name"
+                        onChange={e => setValues({...values,name: e.target.value})} />
 
                     </div>
                     <div className="inputBox">
                         <span className="fa fa-envelope"></span>
-                        <input type="email" placeholder="Email" />
+                        <input type="email" placeholder="Email" name="email" 
+                        onChange={e => setValues({...values,email: e.target.value})}/>
 
                     </div>
                     <div className="inputBox">
                         <span className="fa fa-phone"></span>
-                        <input type="number" placeholder="number" />
+                        <input type="number" placeholder="number" name="number" 
+                        onChange={e => setValues({...values,number: e.target.value})}/>
 
                     </div>
                     <input type="submit" value="contact now" className="btn" />

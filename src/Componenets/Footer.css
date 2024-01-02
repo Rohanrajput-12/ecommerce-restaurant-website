@@ -2,4 +2,32 @@
     background: rgb(22, 21, 21);
     text-align: center;
 }
+.footer .link{
+    margin-top: 12px;
+}
 
+.footer .link a{
+    margin: 0 1rem;
+    text-decoration: none;
+
+}
+.footer .link a:hover{
+    color: pink;
+
+}
+
+.footer .share a{
+    margin: 0 1rem;
+    padding-top: 20px;
+    text-decoration: none;
+}
+
+.footer .share a:hover{
+    color: red;
+}
+
+.footer .credit{
+    margin-top: 12px;
+    color: white;
+    padding-bottom: 12px;
+}

@@ -8,6 +8,7 @@ import Review from './Componenets/Review';
 import Contact from './Componenets/Contact';
 import Blog from './Componenets/Blog';
 import Footer from './Componenets/Footer';
+import { BrowserRouter,Routes, Route } from 'react-router-dom';
 
 
 function App() {
@@ -22,6 +23,11 @@ function App() {
     <Contact/>
     <Blog/>
     <Footer/>
+    <BrowserRouter>
+     <Routes>
+      
+     </Routes>
+    </BrowserRouter>
     </div>
   );
 }

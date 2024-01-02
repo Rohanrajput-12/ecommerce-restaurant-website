@@ -8,10 +8,10 @@ const Navbar = () => {
   const cartRef = useRef();
   const navbarRef = useRef();
   const searchHandle = () => {
-      // searchRef.current.classList.toggle("active");
-      // cartRef.current.classList.remove("active");
-      // navbarRef.current.classList.remove("active");
-      console.log("heloo/......")
+      searchRef.current.classList.toggle("active");
+      cartRef.current.classList.remove("active");
+      navbarRef.current.classList.remove("active");
+  
   };
   const cartHandler = () => {
     
