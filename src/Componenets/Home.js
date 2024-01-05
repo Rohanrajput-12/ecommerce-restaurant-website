@@ -1,5 +1,8 @@
 import React from 'react'
 import './Home.css'
+import Navbar from './Navbar'
+import Footer from './Footer'
+
 
 const Home = () => {
     return (
@@ -19,6 +22,8 @@ const Home = () => {
             </div>
 
             </section>
+            <Navbar/>
+            <Footer/>
         </div>
     )
 }

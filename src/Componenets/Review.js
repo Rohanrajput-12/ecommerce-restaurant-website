@@ -2,6 +2,7 @@ import React from "react";
 import {review} from "../Data"
 import qouteImg from "../Assets/Images/quoteimg.png"
 import './Review.css';
+import Footer from "./Footer";
 
 const Review = () => {
     return (
@@ -34,6 +35,7 @@ const Review = () => {
             }
 
             </div>
+        <Footer/>
         </section>
     )
 }

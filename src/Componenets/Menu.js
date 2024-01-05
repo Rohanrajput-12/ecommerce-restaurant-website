@@ -1,6 +1,7 @@
 import React from 'react';
 import './Menu.css';
 import {menu} from "../Data"
+import Footer from './Footer';
 
 const Menu = () => {
     return(
@@ -22,7 +23,7 @@ const Menu = () => {
                 ))
             }
         </div>
-
+        <Footer/>
         </section>
     )
 }

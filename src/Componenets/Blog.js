@@ -1,6 +1,7 @@
 import React from "react";
 import {blog} from "../Data"
 import './Blog.css'
+import Footer from "./Footer";
 
 const Blog = () => {
     return (
@@ -28,6 +29,7 @@ const Blog = () => {
                     ))}
 
                 </div>
+                <Footer/>
 
             </section>
         </div>

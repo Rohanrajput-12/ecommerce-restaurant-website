@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import './Contact.css';
 import axios from "axios";
+import Footer from "./Footer";
 
 const Contact = () => {
     const [values,setValues] = useState({
@@ -53,7 +54,7 @@ const Contact = () => {
 
 
             </div>
-
+        <Footer/>
         </section>
     )
 }

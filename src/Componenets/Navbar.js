@@ -2,57 +2,41 @@ import React,{useRef} from 'react';
 import Logo from '../Assets/Images/rlogo.png';
 import './Navbar.css'
 import {cart} from "../Data"
+import Search from './Search';
 
 const Navbar = () => {
-  const searchRef = useRef();
+  const handleSearch = (searchTerm) => {
+    // Implement your search logic here
+    console.log(`Search term: ${searchTerm}`);
+  };
   const cartRef = useRef();
   const navbarRef = useRef();
-  const searchHandle = () => {
-      searchRef.current.classList.toggle("active");
-      cartRef.current.classList.remove("active");
-      navbarRef.current.classList.remove("active");
   
-  };
   const cartHandler = () => {
     
     cartRef.current.classList.toggle("active");
     navbarRef.current.classList.remove("active");
-    searchRef.current.classList.remove("active");
+   
 
   }
   const navbarHandler = () => {
     console.log("clicking.....");
     
      navbarRef.current.classList.toggle("active");
-     searchRef.current.classList.remove("active");
+   
     cartRef.current.classList.remove("active");
 
   }
   return (
     <div>
       <header className='header'>
-        <a href="logo" className='logo'>
+        <a href="/" className='logo'>
 
           <img className='dd' src={Logo} alt="loading" />
         </a>
-        <nav className='navbar' ref={navbarRef} >
-          <a href="home">Home</a>
-          <a href="about">About</a>
-          <a href="menu">Menu</a>
-          <a href="products">Products</a>
-          <a href="review">Reviews</a>
-          <a href="contact">Contact</a>
-          <a href="blogs">Blogs</a>
-        </nav>
-        <div className='icons'>
-          <div className='fa fa-search' onClick={searchHandle}></div>
-          <div className='fa fa-shopping-cart' onClick={cartHandler}></div>
-          <div className='fa fa-bars' id='menu-btn' onClick={navbarHandler}></div>
-        </div>
-        <div className='search-form' ref={searchRef}>
-          <input type="search" placeholder='Search here...' id='search-box'/>
-          <label htmlFor="search-box" className='fa fa-search'></label>
-        </div>
+
+          <Search onSearch={handleSearch} /> 
+        
         <div className='cart-items-container' ref={cartRef}>  
         {
             cart.map((item,index) => (

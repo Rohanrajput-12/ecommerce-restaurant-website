@@ -1,12 +1,13 @@
 import React from 'react';
 import './Product.css';
 import {product} from "../Data"
+import Footer from './Footer';
 
 const Product = () => {
     return(
         <section className='product' id='product'>
         <h1 className='heading'>
-            our <span>Products</span>
+            our <span>Product</span>
         </h1>
         <div className='box-container'>
             {
@@ -37,7 +38,7 @@ const Product = () => {
                 ))
             }
         </div>
-
+        <Footer/>
         </section>
     )
 }

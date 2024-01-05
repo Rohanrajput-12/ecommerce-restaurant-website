@@ -1,6 +1,8 @@
 import React from 'react'
 import AboutImg from "../Assets/Images/pizza-removebg-preview.png"
 import './About.css'
+import Footer from './Footer'
+import Navbar from './Navbar'
 
 const About = () => {
     return (
@@ -31,7 +33,8 @@ const About = () => {
                     </div>
 
                 </div>
-
+            <Footer/>
+            <Navbar/>
             </section>
         </div>
     )
